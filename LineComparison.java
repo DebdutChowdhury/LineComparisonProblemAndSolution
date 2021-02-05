@@ -1,16 +1,14 @@
 public class LineComparison {
-
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		int x1 = 2;
-		int x2 = 4;
-		int y1 = 5;
-		int y2 = 6;
-		int x3 = 3;
-		int x4 = 7;
-		int y3 = 8;
-		int y4 = 9;
-		
+	int x1 = 2;
+	int x2 = 4;
+	int y1 = 5;
+	int y2 = 6;
+	int x3 = 3;
+	int x4 = 7;
+	int y3 = 8;
+	int y4 = 9;
+	
+	public void calculate() {
 		double lineLength1 = 0;
 		double lineLength2 = 0;
 		lineLength1 = Math.sqrt( (x2 - x1) ^ 2 + (y2- y1) ^ 2);
@@ -29,6 +27,15 @@ public class LineComparison {
 			System.out.println("Length are not same.");
 		else
 			System.out.println("It's lengths are not equal.");
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		System.out.println("Welcome to my line comparison problem and solution:");
+		System.out.println("---------------------------------------------------");
+		LineComparison l = new LineComparison();
+		l.calculate();
+		
 	}
 
 }
