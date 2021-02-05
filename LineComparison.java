@@ -22,9 +22,11 @@ public class LineComparison {
 		String l1 = String.valueOf(lineLength1);
 		String l2 = String.valueOf(lineLength2);
 		
-		boolean result = l1.equals(l2);
-		if (result == true)
+		double result = l1.compareTo(l2);
+		if (result == 0)
 			System.out.println("Both lengths are equal that means the lines are same length.");
+		else if(result > 0)
+			System.out.println("Length are not same.");
 		else
 			System.out.println("It's lengths are not equal.");
 	}
